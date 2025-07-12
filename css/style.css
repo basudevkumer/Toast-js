@@ -1,0 +1,108 @@
+.alertMessage {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+}
+
+.childAlert {
+  padding: 10px 35px;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 11px 14px 24px 1px rgba(107, 107, 107, 0.36);
+  animation: fadeIn 0.3s ease-in, fadeOut 0.7s ease-out 5.3s forwards;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    
+
+    transform: translateX(110%);
+  }
+}
+
+
+.childAlert.childAlert.succcess::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #28a745;
+  animation: alertHover 5.99s linear;
+}
+.childAlert.childAlert.error::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #dc3545;
+  animation: alertHover 5.99s linear;
+}
+.childAlert.childAlert.warning::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffc107;
+  animation: alertHover 5.99s linear;
+}
+.childAlert.childAlert.info::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #17a2b8;
+  animation: alertHover 5.99s linear;
+}
+
+@keyframes alertHover {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.childAlert.succcess {
+  border: 1px solid #28a745;
+  color: #28a745;
+}
+.childAlert.error {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+.childAlert.warning {
+  border: 1px solid #ffc107;
+  color: #ffc107;
+}
+.childAlert.info {
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
+}

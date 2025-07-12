@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pratices</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent mt-5">
+        <h1 class="text-primary py-4">Toast Notification Demo</h1>
+        <button
+          type="button"
+          onclick="showMessage('This action successFully done!','succcess',`<i class='fa-solid fa-square-check'></i>`)"
+          class="btn btn-success"
+        >
+          Show Success
+        </button>
+        <button
+          type="button"
+          onclick="showMessage('This action has an error','error',`<i class='fa-solid fa-xmark'></i>`)"
+          class="btn btn-danger"
+        >
+          Show Error
+        </button>
+        <button
+          type="button"
+          onclick="showMessage('This action has an error','warning',`<i class='fa-solid fa-triangle-exclamation'></i>`)"
+          class="btn btn-warning"
+        >
+          Show Warning
+        </button>
+        <button
+          type="button"
+          onclick="showMessage('This action has an error','info',`<i class='fa-solid fa-circle-info'></i>`)"
+          class="btn btn-info"
+        >
+          Show Info
+        </button>
+
+        <div class="alertMessage"></div>
+      </div>
+    </div>
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
